@@ -21,6 +21,7 @@
 
 ### Output files:
 1. output_path/Rawfile
+
 each file represents for a single independent variable with all the predictors.
 
 | column name | explaination|
@@ -38,6 +39,7 @@ each file represents for a single independent variable with all the predictors.
 | selected | yes if the predictor variable is stably selected by stablity selection |
 
 2. Name_lasso_results_FDR_0.05_stable.csv
+
 combine all the independent variable files and adjusted for the p value, only those with FDR < 0.05 and stably choosed rows are retained.
 
 

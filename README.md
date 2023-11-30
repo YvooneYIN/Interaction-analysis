@@ -5,7 +5,7 @@
 2. Independent (y) file: a csv file, samples are rows and variables are columns.
 
 ### Script usage:
-```
+``` R
 ./lasso.R \
 -s . \ # Path to the script
 --input_predictor_file /INPUT/X/FILE/NAME \ # Name of  the input predictor(x) file (csv file,column:taxa name, row:sample)
@@ -42,6 +42,25 @@ each file represents for a single independent variable with all the predictors.
 
 combine all the independent variable files and adjusted for the p value, only those with FDR < 0.05 and stably choosed rows are retained.
 
+## SparseCCA
+### Input files:
+1. Predictor (x) file: a csv file, samples are rows and variables are columns.
+2. Independent (y) file: a csv file, samples are rows and variables are columns.
+   
+### Script usage:
+``` R
+./sparseCCA.R \
+--script_path /SCRIPTS/PATH \
+--input_predictor_file /INPUT/X/FILE/NAME \
+--input_independent_file /INPUT/Y/FILE/NAME \
+-n 8 \
+-o /OUTPUT/PATH \
+--name Control 
+
+```
+### Output files:
+1. Name/xx_xx.txt
+2. Name/components/independent_predictor_component_x.txt
 
 
 

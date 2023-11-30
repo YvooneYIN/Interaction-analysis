@@ -22,6 +22,7 @@
 ### Output files:
 1. output_path/Rawfile
 each file represents for a single independent variable with all the predictors.
+
 | column name | explaination|
 |-------------|-------------|
 | independent variable name | the parameter specified as **-x** |
